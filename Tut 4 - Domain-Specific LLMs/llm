@@ -1,0 +1,103 @@
+SECTION 1 — WARM-UP (Ideal Answers)
+Q1. Tell me about a recent AI/GenAI solution you built.
+Ideal Answer:
+“I led the development of a RAG-based chatbot for cryptocurrency analytics where I 
+designed the ingestion → embeddings → vector storage → retrieval pipeline using 
+LangChain. I also fine-tuned BERT for sentiment analysis and exposed everything 
+via FastAPI. The impact was a measurable improvement in retrieval quality and 
+faster research cycles for analysts.”
+What Good Looks Like:
+• Clear structure (problem → solution → impact)
+• Uses correct AI terminology
+• Concrete metrics or improvements
+Common Mistakes: Too vague, no ownership, no metrics.
+Q2. Why this Agentic AI Engineer role?
+Ideal Answer:
+“I want to work on production-grade agentic automation at enterprise scale. I’ve built 
+multi-agent prototypes but I want to deepen my experience in workflow orchestration, 
+governance, and system-level automation. Shell’s focus on Responsible AI and 
+enterprise integration matches the direction I want to grow into.”
+Strong Signals: Motivations tied to JD themes: governance, enterprise scale, 
+multi-system automation.
+SECTION 2 — FUNDAMENTALS (Ideal Answers)
+Q3. What is an agentic AI system?
+Ideal Answer:
+“An agentic AI system uses an LLM plus tools, memory, and structured reasoning to 
+execute multi-step tasks autonomously. It plans, decides which tool to call, performs 
+actions, and validates results — unlike a normal LLM which only generates text.”
+Strong Signals: Mentions planning, tools, safety boundaries.
+Q4. Describe your RAG architecture.
+Ideal Answer:
+“In my RAG chatbot I built:
+1. Document ingestion and chunking
+2. Embedding generation (HuggingFace)
+3. Vector store retrieval
+
+
+4. Prompt template with context injection
+5. Output validation and hallucination tests”
+Strong Signals: Talks about chunking, retrieval quality, failure modes.
+Q5. Explain embeddings.
+Ideal Answer:
+“Embeddings convert text into numerical vectors that preserve semantic meaning. 
+Retrieval uses vector similarity — usually cosine — to find the closest meaning.”
+Q6. Why does prompt engineering matter in enterprise AI?
+Ideal Answer:
+“Prompts act like a control layer. Templates, guardrails, and evaluations keep outputs 
+consistent, reduce risk, and ensure compliance with safety standards.”
+SECTION 3 — INTERMEDIATE APPLICATION (Ideal Answers)
+Q7. How did you integrate your models into production?
+Ideal Answer:
+“I used FastAPI with async endpoints, added monitoring, logged inference metadata, 
+used CI/CD for deployments, versioned models, handled retries, and implemented 
+auth checks.”
+Q8. What makes a UI safe for AI workflows?
+Ideal Answer:
+“Clear workflow triggers, visibility on agent status, warnings for irreversible steps, 
+input validation, error transparency, and audit-friendly logs.”
+Q9. Securing a multi-system agent integration?
+Ideal Answer:
+“I’d use OAuth2 / RBAC, tool wrappers with strict validation, rate limits, retries with 
+backoff, and full observability. Every tool call must be logged for traceability.”
+Q10. RAG vs Fine-tuning?
+Ideal Answer:
+“Use RAG for dynamic knowledge and grounding; fine-tuning for behaviour 
+consistency. In many enterprise cases, you start with RAG and add light fine-tuning 
+for task style.”
+SECTION 4 — ADVANCED / SYSTEM DESIGN (Ideal Answers)
+Q11. Design an agentic workflow for LNG operations.
+Ideal Answer Structure:
+1. Trigger (operator input / schedule)
+
+2. Agent planning + task decomposition
+3. Tools: scheduling system → document fetch → validation
+4. Human-in-loop step
+5. Output to dashboard
+6. Guardrails, audit logs, retry logic, fallbacks
+Strong Signals: Mentions safety, planning errors, governance.
+Q12. AWS → Azure migration.
+Ideal Answer:
+“Migrate S3 → Blob, Lambda → Azure Functions, SageMaker → Azure ML. Rebuild 
+IAM with AAD roles, replicate environment variables and CI/CD pipelines, and test 
+inference parity using shadow deployments.”
+Q13. Governance for LLM outputs.
+Ideal Answer:
+“Three layers:
+1. Input controls (PII/PII detection)
+2. Model guardrails (filters, output rules)
+3. Post-processing (validation, scoring, trace logs)
+Plus sign-off checkpoints for sensitive workflows.”
+SECTION 5 — BEHAVIOURAL (Ideal Answers)
+Q14. Example of solving complex problems under pressure.
+Ideal Answer:
+Uses STAR: “When a production endpoint failed at ChainUp, I quickly isolated the 
+issue, rolled back, patched the service, and implemented monitoring to prevent 
+recurrence.”
+Q15. Cross-team alignment example.
+Ideal Answer:
+“I facilitated a three-team design session with architecture, product, and engineering 
+to align on data flows, leading to a simplified integration design.”
+Q16. Improving AI workflow quality.
+Ideal Answer:
+“I added retrieval quality evaluation, reduced chunking size mismatches, and 
+introduced grounding checks, which cut hallucinations significantly.”
